@@ -45,13 +45,13 @@
   padding: 1em 0.5em;
 }
 
-.creator-card .social-buttons p {
+.creator-card .pronoun {
   display: inline-block;
   font-size: 14px;
   text-decoration: none;
   background: var(--soberana-pink);
   color: #fff;
-  padding: 10px 16px;
+  padding: 4px 10px;
   border-radius: 32px;
   line-height: 20px;
 }
@@ -65,7 +65,6 @@
 }
 .project-card .description-container p:last-child {
   font-size: 14px;
-  color: #49454F;
 }
 .project-card img {
   display: block;

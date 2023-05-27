@@ -1,26 +1,20 @@
 {% macro creator_card(name, links, image, tags, pronouns) %}
 <div class="creator-card container">
   <div class="heading">
-    <p>{{name}}</p>
+    <p>{{name}} <span class="pronoun">{% for pronoun in pronouns %} {{pronoun}} {% endfor %}</span></p>
     <a href={{links}} target="_blank" rel="noopener noreferrer">{{links}}</a>
   </div>
-  <img src="{{image}}" />
+  <img src="{{image}}" draggable="false"/>
   <div class="description-container">
     <p>{{tags}}</p>
-  </div>
-  <div class="social-buttons">
-    {% for pronoun in pronouns %}
-    <p>{{pronoun}}</p>
-    {% endfor %}
   </div>
 </div>
 {% endmacro creator_card %}
 
 {% macro project_card(title, image, tags, link) %}
 <div class="project-card container">
-  <img src="{{image}}" />
+  <img src="{{image}}" alt="{{title}}"/>
   <div class="description-container">
-    <p>{{title}}</p>
     <p>{{tags}}</p>
   </div>
   <div class="social-buttons">
